@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 1</title>
+    
+</head>
+
+<body class="View">
+    <h1>Assignment 1</h1>
+    <hr>
+    <div class = "horContainer">
+        <div>
+                <h2>Tweets</h2>
+            <h5>To Create a Tweet,
+                Enter "ID;Text"
+                In That Exact Format
+            </h5>
+            
+            <button class= "functionButton" id="get-tweets-button">Get Tweets</button>
+            <form id="create-form">
+                <input type="text" id="create-input">
+                <button class="NavButton">Create Tweet</button>
+
+            </form>
+            <form id="delete-form">
+                <input type="number" id="delete-input">
+                <button class="NavButton" id='delete-button'>Delete Tweet</button>
+
+        </form>
+            <table id="tweettable">
+                <thead>
+                    <tr>
+                        <th id="id">ID</th>
+                        <th id="text">Text</th>
+                        <th id="createAt">Created At</th>
+                    </tr>
+                </thead>
+                <tbody id="tweetbody"></tbody>
+            </table>
+        <hr>
+        </div>
+        <div>
+            <h2>Users</h2>
+            <h5>To Change Screen Name,
+                Enter "Name;NewScreenName"
+                In That Exact Format
+            </h5>
+
+            <button class= "functionButton"  id="get-button">Get Users</button>
+            <form id="update-user">
+                <input type="text" id="update-input">
+                <button id="update-button">Update User</button>
+            </form>
+            <p>
+            </p>
+            <table>
+                <thead>
+                    <tr height="px 50%">
+                        <th id="id">ID</th>
+                        <th id="sName">Screen Name</th>
+                        <th id="name">Name</th>
+                    </tr>
+                </thead>
+                <tbody id="namebody"></tbody>
+            </table>
+            <hr>
+        </div>
+        <div>
+            <h2>Search for a Tweet</h2>
+            <button class="functionButton" id="get-searched-tweets">Recently Searched</button>
+            <form id="search-form">
+                <input type="number" id="search-input">
+                <button id="searchsubmit">Search</button>
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th id="id">ID</th>
+                        <th id="text">Text</th>
+                        <th id="createdAt">Created At</th>
+                    </tr>
+                </thead>
+                <tbody id="searchtweetbody"></tbody>
+            </table>
+            <hr>
+        </div>
+        
+    </div>
+    
+   
+    <script src="jquery.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+    
